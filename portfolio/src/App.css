@@ -1,0 +1,26 @@
+
+.marquee-text {
+  font-family: "Creepster", cursive;
+  color: rgb(255, 255, 255);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: rgba(0, 0, 0, 0.8);
+
+  font-size: 20px;
+  animation: flicker 1s infinite alternate;
+  margin-bottom: 10px;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 8px #ff5fb7, 0 0 20px #ff5fb7, 0 0 30px #ff5fb7, 0 0 40px #ff5fb7;
+  }
+  50% {
+    opacity: 0.8;
+    text-shadow: 0 0 10px #ff5fb7, 0 0 25px #ff5fb7, 0 0 35px #ff5fb7, 0 0 50px #ff5fb7;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 8px #ff5fb7, 0 0 20px #ff5fb7, 0 0 30px #ff5fb7, 0 0 40px #ff5fb7;
+  }
+}
